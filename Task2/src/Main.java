@@ -1,8 +1,14 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        //todo  код
+        String text = new Scanner(System.in).nextLine();
+        System.out.println(metod(text));
+
     }
 
-    //todo метод
+    public static String metod(String text) {
+       return text.replaceAll("\\W+", "\n").trim();
+    }
 
 }
